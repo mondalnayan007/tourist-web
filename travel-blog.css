@@ -1,0 +1,490 @@
+*{
+    margin: 0 ;
+    padding: 0;
+   
+}
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+span{
+    color: blue;
+}
+                       /* Navbar section */
+li{
+   float: inline-start;
+    margin: 15px;
+    list-style-type: none;
+    
+}
+li a{
+    text-decoration: none;
+    color: rgb(28, 25, 25);
+}
+nav{
+    margin: 20px 0;
+}
+.nav-head{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.nav-title{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.nav-left{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+                         /* Banner section */
+
+
+
+.banner{
+    background: linear-gradient(rgba(7, 9, 15, 0.36), rgba(2, 4, 9, 0.365)),url('Images/01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+
+}
+.banner-title{
+    color: white;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.banner-heading{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+select,input,button{
+    height: 35px;
+    width: 130px;
+    border-radius: 5px;
+   padding-left: 10px;
+    border: none;
+    box-shadow: 5px 5px 5px 0 rgb(63, 61, 61);
+    
+    
+}
+button{
+    height: 30px;
+    width: 120px;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ;
+    
+}
+button:hover{
+    background-color: rgb(92, 224, 136);
+}
+.input-section{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    
+    
+    height: 52px;
+
+}
+
+.input-section-outer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 630px;
+    height: 70px;
+}
+.input-section-outer::before{
+    content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      background-color: white; /* Black overlay */
+      opacity: 0.3;
+      z-index: 1;
+}    
+                             /* Popular section  */
+
+
+
+.popular-section{
+    display: flex;
+gap: 60px;
+margin-top: 40px;
+padding-left: 100px;
+
+}
+.popular-title{
+    width: 450px;
+  height: 400px;
+}
+.popular-img-first img{
+    
+     width: 450px;
+     height: 450px;
+     border-radius: 10px;
+}
+.popular-img video{
+    
+    background-color: black;
+    width: 450px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+
+                       /* Destination section */
+
+
+.destination-section{
+    margin: 40px 0;
+    text-align: center;
+}
+
+
+
+
+                       /* Multi image section */
+
+
+
+.st-nd,.th,.rd-to-th{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  
+}
+.img1 h3{
+position: relative;
+top: 50%;
+left: 35%;
+font-size: 40px;
+font-weight: 800;
+color: white;
+visibility: hidden;
+transition: visibility,color 0s linear;
+   
+}
+.img1:hover h3{
+  visibility: visible;
+  color: aqua;
+}
+
+                            /* Service section */
+
+
+.service{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+
+}
+.first{
+    background-color: rgb(193, 217, 238);
+    height: 220px;
+    width: 573px;
+ 
+    
+}
+.second{
+    background-color: rgb(245, 226, 201);
+    height: 220px;
+    width: 573px;
+}
+.third{
+    background-color: rgb(232, 133, 201);
+    height: 220px;
+    width: 573px;
+    
+
+}
+.first,.second,.third{
+    padding: 30px;
+    border-radius: 15px;
+}
+.service2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.service-icons{
+    height: 50px;
+    width: 50px;
+}
+
+                                  /* Double Div section */
+
+
+
+.double-div{
+    margin-top: 40px;
+    background-image: url('./Images/Group\ 39.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.front-div,.front-div-left{
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    
+    position: relative;
+    top: 80px;
+    
+    text-align: left;
+
+    padding: 40px;
+    border-radius: 8px;
+    opacity: 0.8;
+    
+    align-items: center;
+    justify-content: center;
+    /* visibility: hidden;
+    transition: visibility ;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+     */
+    
+}
+/* .double-div:hover .front-div{
+    visibility: visible;
+} */
+
+
+
+
+.front-div{
+    float: right;
+    right: 100px;
+    
+
+}
+.front-div-left{
+    float: left;
+    left: 100px;
+}
+
+
+.inner-btn{
+    height: 40px;
+    width: 120px;
+    background-color: orangered;
+    color: white;
+    margin: 20px 0; 
+}
+.icons{
+   color: orangered; 
+   text-align: left;
+}
+
+.double-div-left{
+    margin-top: 40px;
+    background-image: url('./Images/Group\ 40.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.all-package{
+text-align: center;
+}
+
+                                /* Booking Section */
+#booking{
+     background-color: black;
+     color: white;
+     height: 370px;
+     border-radius: 15px;
+}
+.booking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+   
+   
+}
+.name,.email,.date,.destination{
+    margin: 10px 0;
+}
+
+                              /* Booking section end */
+                           
+
+
+                            /* Guide Section start */
+.tourist-guide-outer{
+    text-align: center;
+    height: 500px;
+    margin: 30px 0;
+    
+}
+.tourist-guide-outer h1{
+    color: rgb(220, 91, 22);
+    margin: 20px 0;
+}
+.tourist-guide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+ 
+}
+.guide{
+    box-shadow: 0 0 20px rgb(64, 237, 243);
+    border-radius: 15px;   
+}
+.guide-part1 img{
+  height: 200px;
+  width: 200px;
+  border-radius: 15px 15px 0 0;
+ 
+  transition: height,width 1.5s,1.5s;
+}
+.guide-part1 img:hover{
+    height: 250px;
+    width: 250px;
+}
+.guide-part2{
+    margin-top: 20px;
+}
+.guide-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+                                 /* Newsletter Section */
+
+
+
+.news-letter{
+    display: flex;
+    gap: 30px;
+    margin: 30px 20px 30px 40px;
+    
+    
+}
+.news-letter-left{
+    height: 300px;
+    padding: 20px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+}
+.news-letter-right {
+    background-image: url('./Images/newsletter.png');
+    height: 340px;
+    width: 580px;
+    border-radius: 5px;
+}
+.news-input{
+    
+    height: 40px ;
+    padding-left: 10px;
+  width: 300px;
+}
+.news-letter-left input{
+    background-color: rgb(229, 233, 236);
+    
+    width: 290px;
+}
+.uper{
+    text-align: center;
+    background-color: orangered;
+    border-radius: 5px;
+    height: 60px;
+    width: 170px;
+    color: white;
+    position: relative;
+    top: 230px;
+    left: 410px;
+    transform: rotate(-45deg);
+}
+
+
+                      /* Newsletter section End */
+
+
+                           /* Footer section */
+.logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.logo-title{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    height: 400px;
+
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 30px 0 80px 0;
+    height: 50px;
+    width: 100px;
+}
+
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  .destination-section,.st-nd,.rd-to-th,.th,.destination-section,.service,.service2,.double-div,.double-div-left,.all-packagem,.news-letter-left,.tourist-guide-outer,.news-letter,#testimonial{
+    animation: appear linear 1s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
